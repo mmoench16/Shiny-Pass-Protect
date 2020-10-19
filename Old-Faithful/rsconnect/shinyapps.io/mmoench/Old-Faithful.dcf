@@ -1,0 +1,13 @@
+name: Old-Faithful
+title: Old-Faithful
+username:
+account: mmoench
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2978024
+bundleId: 3757329
+url: https://mmoench.shinyapps.io/Old-Faithful/
+when: 1603093203.00706
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .Renviron|database.sqlite|Secret/encryption.R

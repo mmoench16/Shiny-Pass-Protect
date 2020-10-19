@@ -2,8 +2,6 @@ library(shiny)
 library(shinymanager)
 
 #############
-credentials <- readRDS("Secret/creds.rds")
-
 secure_app(
 #############
 
