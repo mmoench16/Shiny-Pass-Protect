@@ -1,10 +1,12 @@
 library(shiny)
 library(shinymanager)
 
+# Load credentials
 credentials <- readRDS("Secret/creds.rds")
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
+  #########
   # Shinymanager Auth
   res_auth <- secure_server(
     check_credentials = check_credentials(credentials)
@@ -13,7 +15,8 @@ shinyServer(function(input, output, session) {
   output$auth_output <- renderPrint({
     reactiveValuesToList(res_auth)
   })
-   
+  #########
+  
   output$distPlot <- renderPlot({
     
     # generate bins based on input$bins from ui.R
